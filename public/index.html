@@ -4,55 +4,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hassan | Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="#home" class="logo">Hassan.</a>
 
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
+    <meta
+        name="description"
+        content="Hassan's software engineering portfolio, projects, and technical skills."
+    >
+
+    <meta name="theme-color" content="#0b1120">
+
+    <title>Hassan | Software Engineer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="site.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+
+    <nav class="navbar container" aria-label="Main navigation">
+        <a class="logo" href="index.html#home">Hassan<span>.</span></a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links" id="primary-navigation">
+            <a href="index.html#about">About</a>
+            <a href="index.html#motivation">Motivation</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="development-log.html">Development Log</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <p class="eyebrow">SOFTWARE ENGINEERING</p>
-            <h1>Hi, I'm Hassan.</h1>
-            <h2>I build software that solves problems.</h2>
-            <p>
-                Software Engineering graduate interested in web development,
-                backend systems and cloud technologies.
+
+    <section id="home" class="hero container">
+        <div class="hero-content">
+            <p class="eyebrow">
+                <span class="status-dot"></span>
+                OPEN TO SOFTWARE ENGINEERING OPPORTUNITIES
             </p>
-            <a href="#projects" class="button">Explore my projects</a>
-        </section>
 
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>
-                I'm a Software Engineering graduate building practical
-                projects and expanding my development skills.
+            <h1>
+                Turning ideas into software.<br>
+                <span>Learning by building.</span>
+            </h1>
+
+            <p class="hero-description">
+                I'm Hassan, a First Class Software Engineering graduate
+                actively looking for an opportunity to begin and grow my
+                career in software engineering.
             </p>
+
+            <p class="hero-description">
+                I enjoy solving problems, exploring new technologies, and
+                turning ideas into practical applications. I'm building
+                projects to strengthen my skills, challenge myself, and
+                demonstrate what I can bring to a development team.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button button-primary" href="#projects">
+                    Explore my work <span aria-hidden="true">↗</span>
+                </a>
+
+                <a class="button button-secondary" href="#contact">
+                    Let's connect
+                </a>
+            </div>
+
+            <div class="hero-meta">
+                <span>Software Development</span>
+                <span class="meta-divider"></span>
+                <span>Problem Solving</span>
+                <span class="meta-divider"></span>
+                <span>Continuous Learning</span>
+            </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+            <div class="visual-glow"></div>
+
+            <div class="code-window">
+                <div class="window-bar">
+                    <div class="window-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span class="window-title">developer.ts</span>
+                </div>
+
+                <div class="code-content">
+                    <p><span class="line-number">01</span>
+                        <span class="code-purple">const</span> developer = {
+                    </p>
+                    <p><span class="line-number">02</span>
+                        &nbsp;&nbsp;mindset:
+                        <span class="code-green">"Keep learning"</span>,
+                    </p>
+                    <p><span class="line-number">03</span>
+                        &nbsp;&nbsp;approach:
+                        <span class="code-green">"Build and improve"</span>,
+                    </p>
+                    <p><span class="line-number">04</span>
+                        &nbsp;&nbsp;goal:
+                        <span class="code-green">"Become a better engineer"</span>
+                    </p>
+                    <p><span class="line-number">05</span>};</p>
+                    <p class="code-comment">
+                        <span class="line-number">06</span>
+                        // Every project is a chance to grow.
+                    </p>
+                </div>
+
+                <div class="window-footer">
+                    <span class="status-dot"></span>
+                    Ready for the next challenge
+                </div>
+            </div>
+
+            <div class="floating-tag tag-top">Problem Solver</div>
+            <div class="floating-tag tag-bottom">Always Learning</div>
+        </div>
+    </section>
+
+
+
+        <section id="about" class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">01 / MY STORY</p>
+                <h2>Why software engineering?</h2>
+            </div>
+
+            <div class="about-content">
+                <p>
+                    My interest in software engineering comes from the combination
+                    of logic, creativity, and problem-solving. I enjoy understanding
+                    how systems work, figuring out how to improve them, and turning
+                    an idea into something people can actually use.
+                </p>
+
+                <p>
+                    After graduating with First Class Honours in Software
+                    Engineering, I want to take the next step into a professional
+                    development role where I can apply what I've learned, contribute
+                    to real projects, and continue developing as an engineer.
+                </p>
+
+                <p>
+                    I believe that becoming a good developer involves more than
+                    knowing a programming language. It means understanding the
+                    problem, writing maintainable code, testing solutions,
+                    learning from mistakes, and being willing to improve.
+                </p>
+
+                <p>
+                    That's why I continue working on personal projects outside
+                    my formal education. They give me the opportunity to experiment
+                    with technologies, strengthen my practical skills, and explore
+                    ideas that interest me.
+                </p>
+
+                <p>
+                    I'm looking for a junior or graduate software engineering
+                    opportunity where I can learn from experienced developers,
+                    collaborate with a team, take on meaningful challenges, and
+                    gradually grow into a stronger, more capable engineer.
+                </p>
+            </div>
         </section>
 
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <p>My development projects will be showcased here.</p>
+
+        <section id="motivation" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">02 / WHAT DRIVES ME</p>
+                    <h2>More than just writing code.</h2>
+                    <p class="section-intro">
+                        The things that keep me curious, motivated, and moving forward.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <span class="skill-icon">01</span>
+                        <h3>Solving real problems</h3>
+                        <p>
+                            I enjoy breaking down complex problems, understanding
+                            what needs to be solved, and developing practical
+                            solutions rather than coding without a purpose.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <span class="skill-icon">02</span>
+                        <h3>Learning through building</h3>
+                        <p>
+                            Personal projects help me turn theory into practice,
+                            explore unfamiliar technologies, and learn by
+                            experimenting, debugging, and improving.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <span class="skill-icon">03</span>
+                        <h3>Growing as an engineer</h3>
+                        <p>
+                            I want to develop stronger engineering habits,
+                            understand different approaches to software design,
+                            and learn from people with more experience.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <span class="skill-icon">04</span>
+                        <h3>Creating useful software</h3>
+                        <p>
+                            I'm interested in applications, backend systems,
+                            APIs, automation, and technology that makes tasks
+                            easier or improves how people work.
+                        </p>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Interested in working together? Get in touch.</p>
+
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">03 / TECHNOLOGIES</p>
+                    <h2>Tools I work with.</h2>
+                    <p class="section-intro">
+                        Technologies I've used in my learning and development
+                        projects.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <span class="skill-icon">01</span>
+                        <h3>Languages</h3>
+                        <p>TypeScript, JavaScript, Python, Java, C#</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <span class="skill-icon">02</span>
+                        <h3>Web Development</h3>
+                        <p>HTML, CSS, Node.js, APIs</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <span class="skill-icon">03</span>
+                        <h3>Cloud & Infrastructure</h3>
+                        <p>AWS, Linux, Nginx, Gunicorn</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <span class="skill-icon">04</span>
+                        <h3>Tools & Systems</h3>
+                        <p>Git, GitHub, Windows, networking</p>
+                    </article>
+                </div>
+            </div>
         </section>
+
+        <section id="projects" class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">04 / SELECTED WORK</p>
+                <h2>Projects I've worked on.</h2>
+                <p class="section-intro">
+                    A look at the applications and ideas I've explored
+                    through software development.
+                </p>
+            </div>
+
+            <div id="project-list" class="project-grid">
+                <p class="loading-message">Loading projects...</p>
+            </div>
+
+
+        </section>
+
+        <section id="contact" class="section section-alt">
+            <div class="container contact-content">
+                <p class="eyebrow">05 / WHAT'S NEXT</p>
+
+                <h2>I'm ready to learn, contribute, and grow.</h2>
+
+                <p>
+                    I'm actively looking for a junior or graduate software
+                    engineering opportunity where I can put my skills into
+                    practice, contribute to meaningful projects, and learn
+                    from an experienced team.
+                </p>
+
+                <p>
+                    If you're hiring, working on an interesting project, or
+                    would like to connect about software engineering, I'd
+                    be happy to hear from you.
+                </p>
+
+
+                <div class="contact-actions">
+                    <a
+                        class="button button-primary"
+                        href="mailto:hassann4242@gmail.com"
+                    >
+                        Email me ↗
+                    </a>
+
+
+                    <button
+                        class="button button-primary"
+                        type="button"
+                        onclick="navigator.clipboard.writeText('hassann4242@gmail.com').then(() => this.textContent = 'Email copied!')"
+                    >
+                        Copy email address
+                    </button>
+
+                </div>
+
+                
+
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 Hassan. Built with HTML, CSS and TypeScript.</p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="logo" href="index.html#home">Hassan<span>.</span></a>
+            <p>Designed and built with HTML, CSS and TypeScript.</p>
+            <p>© 2026 Hassan</p>
+        </div>
     </footer>
 </body>
 </html>
