@@ -32,6 +32,19 @@ const portfolioProjects = [
             "TF-IDF",
             "Machine Learning"
         ]
+    },
+    {
+        name: "Coffee Shop Sales & Inventory Analysis",
+        description: "Conducted an end-to-end analysis of a synthetic coffee shop dataset covering 25,000 sales transactions, 40 products, and 14,600 daily inventory records across 2025. Used Python to investigate revenue trends, product performance, sales channels, peak trading hours, inventory wastage, and stock replenishment. Performed data validation and reconciliation checks and produced 12 visualisations to communicate key findings.",
+        technologies: [
+            "Python",
+            "Pandas",
+            "NumPy",
+            "Matplotlib",
+            "Data Analysis",
+            "Data Visualisation"
+        ],
+        githubUrl: "https://github.com/Hassan-Naveed1/coffee-shop-synthetic-dataset"
     }
 ];
 const projectList = document.querySelector("#project-list");
