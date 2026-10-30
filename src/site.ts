@@ -41,21 +41,6 @@ const portfolioProjects: PortfolioProject[] = [
             "TF-IDF",
             "Machine Learning"
         ]
-    },
-    {
-        name: "UK Used-Car Market Analysis",
-        description:
-            "Currently in progress. Analysing approximately 480,000 UK used-car listings using Python and Pandas. Conducted data quality investigations and exploratory data analysis to identify patterns in advertised prices, mileage, fuel types, and vehicle registration years. Developing statistical visualisations to communicate market insights and trends.",
-        technologies: [
-            "Python",
-            "Pandas",
-            "Matplotlib",
-            "Seaborn",
-            "Data Analysis",
-            "Git",
-            "GitHub"
-        ],
-        githubUrl: "https://github.com/Hassan-Naveed1/uk-used-car-market-analysis"
     }
 ];
 
