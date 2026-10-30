@@ -474,6 +474,23 @@ a:focus-visible {
     line-height: 1.8;
 }
 
+.project-link {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 16px;
+    color: var(--accent-bright);
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
 .loading-message {
     color: var(--muted);
 }
