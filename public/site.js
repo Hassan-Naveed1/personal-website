@@ -45,6 +45,21 @@ const portfolioProjects = [
             "Data Visualisation"
         ],
         githubUrl: "https://github.com/Hassan-Naveed1/coffee-shop-synthetic-dataset"
+    },
+    {
+        name: "World Clock Dashboard",
+        description: "Developed a responsive world clock application using React and TypeScript. Features live clocks across multiple time zones, an interactive world map, city search, automatic time zone detection, favourite locations, and persistent browser storage.",
+        technologies: [
+            "React",
+            "TypeScript",
+            "Vite",
+            "React Leaflet",
+            "OpenStreetMap",
+            "REST APIs",
+            "Local Storage"
+        ],
+        githubUrl: "https://github.com/Hassan-Naveed1/world-clock-wall",
+        liveUrl: "https://hassan-naveed1.github.io/world-clock-wall/"
     }
 ];
 const projectList = document.querySelector("#project-list");
@@ -58,6 +73,18 @@ if (projectList) {
                 ${project.technologies.join(" · ")}
             </p>
 
+        <div class="project-links">
+            ${project.liveUrl ? `
+                <a
+                    class="project-link"
+                    href="${project.liveUrl}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Live Website ↗
+                </a>
+            ` : ""}
+
             ${project.githubUrl ? `
                 <a
                     class="project-link"
@@ -68,6 +95,7 @@ if (projectList) {
                     View on GitHub ↗
                 </a>
             ` : ""}
+        </div>
         </article>
     `).join("");
 }
